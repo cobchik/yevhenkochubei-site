@@ -1,0 +1,51 @@
+---
+layout: default
+---
+{% comment %}
+  Шаблон сторінки тесту. У front matter сторінки потрібні:
+  title, test_name (напр. "GAD-7"), tally_id, questions, minutes,
+  а сам текст сторінки (опис тесту) — у тілі файлу.
+{% endcomment %}
+
+<section class="hero">
+  <p class="kicker"><a href="{{ '/samodopomoga/' | relative_url }}">Самодопомога</a> · тест {{ page.test_name }}</p>
+  <h1>{{ page.title }}</h1>
+  <div class="lede">{{ content }}</div>
+  <p class="post-meta">{{ page.questions }} запитань · близько {{ page.minutes }} хв · анонімно</p>
+</section>
+
+<section class="section">
+  <div class="test-note">
+    <strong>Це скринінг, а не діагноз.</strong> Тест допомагає зорієнтуватися
+    у своєму стані й зрозуміти, чи варто звернутися по допомогу.
+    Остаточну оцінку може дати лише фахівець після особистої розмови.
+  </div>
+
+  <div class="tally-block">
+    <iframe data-tally-src="https://tally.so/embed/{{ page.tally_id }}?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+            loading="lazy" width="100%" height="600" frameborder="0"
+            title="{{ page.title }}"></iframe>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="wrap">
+    <h2>Що робити з результатом</h2>
+    <ul class="list-plain">
+      <li><strong>Низький бал</strong> — добре, але якщо щось усе одно турбує, це теж привід поговорити.</li>
+      <li><strong>Помірний бал</strong> — варто звернутися до психолога чи психотерапевта: такі стани добре піддаються роботі.</li>
+      <li><strong>Високий бал</strong> — рекомендую звернутися до лікаря-психіатра для оцінки стану; психотерапію можна поєднувати з лікуванням.</li>
+    </ul>
+    <a class="btn" href="{{ '/kontakty/' | relative_url }}">Записатись на консультацію</a>
+  </div>
+</section>
+
+<section class="section">
+  <p class="crisis-note">
+    Якщо вам зараз дуже важко або з'являються думки про те, щоб завдати собі
+    шкоди, — не чекайте: телефонуйте <strong>112</strong> або на лінію
+    <strong>Lifeline Ukraine 7333</strong> (цілодобово, безкоштовно).
+  </p>
+</section>
+
+<script async src="https://tally.so/widgets/embed.js"></script>

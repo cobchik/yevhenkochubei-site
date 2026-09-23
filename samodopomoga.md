@@ -22,56 +22,28 @@ permalink: /samodopomoga/
     звернутись, якщо результат про це говорить.
   </p>
 
+  {% comment %}
+    Список тестів будується автоматично з файлів у папці samodopomoga/.
+    Тест з'являється тут, щойно його сторінка опублікована (без published: false).
+  {% endcomment %}
+  {% assign tests = site.pages | where: "layout", "test" | sort: "title" %}
   <ul class="list-plain">
-    <li><a href="{{ '/samodopomoga/test-tryvozhnist/' | relative_url }}">Тест на тривожність (GAD-7)</a></li>
-    <li><a href="{{ '/samodopomoga/test-depresiya/' | relative_url }}">Тест на депресію (PHQ-9)</a></li>
-    <li><a href="{{ '/samodopomoga/test-zagalnyi-stan/' | relative_url }}">Загальний психологічний стан (GHQ-12)</a></li>
-    <li><a href="{{ '/samodopomoga/test-pryvyazanist/' | relative_url }}">Тип прив'язаності у стосунках</a></li>
-    <li><a href="{{ '/samodopomoga/test-adhd/' | relative_url }}">Скринінг на ознаки СДУГ (ASRS)</a></li>
+    {% for test in tests %}
+    <li><a href="{{ test.url | relative_url }}">{{ test.title }}</a></li>
+    {% endfor %}
   </ul>
-
-  <p>
-    <em>Перед публікацією кожного нового тесту в бібліотеці перевіряється
-    статус ліцензії на комерційне використання.</em>
-  </p>
+  <p class="post-excerpt">Нові тести додаються поступово.</p>
 </section>
 
 <section class="section-alt">
   <div class="wrap">
-    <h2>Приклад: сторінка одного тесту</h2>
-    <p>
-      Кожен тест — окрема сторінка з коротким описом, вбудованою формою
-      Tally і результатом з інтерпретацією та кнопкою запису на консультацію.
-    </p>
-    <div class="tally-block">
-      <p><strong>Тест на тривожність (GAD-7)</strong></p>
-      <p>7 запитань, 2 хвилини. Це скринінг, не діагноз.</p>
-      <!-- Вставити реальне посилання/iframe Tally: -->
-      <iframe data-tally-src="https://tally.so/embed/ВАШ_ID_ФОРМИ?alignLeft=1&hideTitle=1&transparentBackground=1"
-              loading="lazy" width="100%" height="500" frameborder="0"
-              title="Тест на тривожність GAD-7"></iframe>
-    </div>
+    <h2>Практики</h2>
+    <p>Готуються до публікації:</p>
+    <ul class="list-plain">
+      <li>Дихальні вправи для заспокоєння</li>
+      <li>Техніки "заземлення" при тривозі</li>
+      <li>Короткі медитації</li>
+      <li>Таблиця для роботи з тривожними думками (КПТ)</li>
+    </ul>
   </div>
 </section>
-
-<section class="section">
-  <h2>Практики</h2>
-  <ul class="list-plain">
-    <li>Дихальні вправи для заспокоєння</li>
-    <li>Техніки "заземлення" при тривозі</li>
-    <li>Короткі медитації</li>
-    <li>Таблиця для роботи з тривожними думками (КПТ)</li>
-  </ul>
-
-  <h3>Приклад відео-практики</h3>
-  <div class="video-embed">
-    <iframe src="https://www.youtube.com/embed/ВАШ_ID_ВІДЕО"
-            title="Дихальна вправа" allowfullscreen></iframe>
-  </div>
-  <p class="post-excerpt">
-    Відео розміщуються на YouTube (не в репозиторії сайту — там немає
-    обмежень на розмір файлу чи трафік, і це додатковий пошуковий канал).
-  </p>
-</section>
-
-<script async src="https://tally.so/widgets/embed.js"></script>
