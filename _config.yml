@@ -1,0 +1,36 @@
+title: "Євген Кочубей — психолог, гештальт-терапевт"
+description: "Індивідуальна психотерапія онлайн та у Києві. Допомога чоловікам у кризі сенсу, а також з тривогою, депресією та стосунками."
+url: "https://yevhenkochubei.com.ua"
+lang: uk
+
+# --- Плагіни (обидва підтримуються нативно GitHub Pages, без Actions) ---
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# --- Колекції / категорії блогу ---
+collections:
+  posts:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+permalink: /blog/:title/
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

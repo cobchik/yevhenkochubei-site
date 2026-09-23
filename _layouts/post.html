@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<article class="post section">
+  <h1>{{ page.title }}</h1>
+  <p class="post-meta">
+    {{ page.date | date: "%d.%m.%Y" }}
+    {% if page.category %} · {{ page.category }}{% endif %}
+  </p>
+  {{ content }}
+
+  <div class="tally-block">
+    <p><strong>Якщо це відгукується — можемо поговорити про це на консультації.</strong></p>
+    <a class="btn" href="{{ '/kontakty/' | relative_url }}">Записатись на консультацію</a>
+  </div>
+</article>
