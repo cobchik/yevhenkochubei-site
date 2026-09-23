@@ -251,6 +251,13 @@ a:hover { color: var(--pine-deep); }
 }
 .list-plain li:first-child { border-top: none; }
 
+/* --- Терапевтичний контракт --- */
+.contract h2 { margin-top: 1.6em; }
+.contract h2:first-child { margin-top: 0; }
+.contract ul { padding-left: 1.2em; max-width: var(--measure); }
+.contract li { margin-bottom: 0.6em; }
+.contract .btn { margin-top: 1.5em; }
+
 /* --- Блог --- */
 .post-list { list-style: none; padding: 0; }
 .post-list li {
