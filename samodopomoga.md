@@ -23,11 +23,11 @@ permalink: /samodopomoga/
   </p>
 
   <ul class="list-plain">
-    <li><a href="/samodopomoga/test-tryvozhnist/">Тест на тривожність (GAD-7)</a></li>
-    <li><a href="/samodopomoga/test-depresiya/">Тест на депресію (PHQ-9)</a></li>
-    <li><a href="/samodopomoga/test-zagalnyi-stan/">Загальний психологічний стан (GHQ-12)</a></li>
-    <li><a href="/samodopomoga/test-pryvyazanist/">Тип прив'язаності у стосунках</a></li>
-    <li><a href="/samodopomoga/test-adhd/">Скринінг на ознаки СДУГ (ASRS)</a></li>
+    <li><a href="{{ '/samodopomoga/test-tryvozhnist/' | relative_url }}">Тест на тривожність (GAD-7)</a></li>
+    <li><a href="{{ '/samodopomoga/test-depresiya/' | relative_url }}">Тест на депресію (PHQ-9)</a></li>
+    <li><a href="{{ '/samodopomoga/test-zagalnyi-stan/' | relative_url }}">Загальний психологічний стан (GHQ-12)</a></li>
+    <li><a href="{{ '/samodopomoga/test-pryvyazanist/' | relative_url }}">Тип прив'язаності у стосунках</a></li>
+    <li><a href="{{ '/samodopomoga/test-adhd/' | relative_url }}">Скринінг на ознаки СДУГ (ASRS)</a></li>
   </ul>
 
   <p>

@@ -23,5 +23,5 @@ permalink: /dlya-kompaniy/
     <li>Супровід для керівників (executive-формат)</li>
     <li>Пакети індивідуальних консультацій для співробітників</li>
   </ul>
-  <a class="btn" href="/kontakty/">Обговорити співпрацю</a>
+  <a class="btn" href="{{ '/kontakty/' | relative_url }}">Обговорити співпрацю</a>
 </section>

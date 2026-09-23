@@ -12,7 +12,7 @@ permalink: /choloviky/
     з внутрішньою розгубленістю, тривогою, втомою та вигоранням, відновити
     ясність і контроль над життям.
   </p>
-  <a class="btn" href="/kontakty/">Записатись на консультацію</a>
+  <a class="btn" href="{{ '/kontakty/' | relative_url }}">Записатись на консультацію</a>
 </section>
 
 <section class="section">
@@ -65,7 +65,7 @@ permalink: /choloviky/
       <li>Формат: онлайн (Zoom) та офлайн (Київ)</li>
       <li>Одноразова консультація або регулярна терапія — раз на тиждень</li>
     </ul>
-    <a class="btn" href="/kontakty/">Записатись на консультацію</a>
+    <a class="btn" href="{{ '/kontakty/' | relative_url }}">Записатись на консультацію</a>
   </div>
 </section>
 
