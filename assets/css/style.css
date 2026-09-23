@@ -1,20 +1,20 @@
 /* ============================================================
    ДИЗАЙН-СИСТЕМА
-   Палітра: тепла спокійна "паперова" основа, глибокий сосновий
-   зелений як структурний акцент, приглушена охра лише для CTA.
-   Навмисно без кремово-теракотового чи чорно-неонового кліше.
+   Палітра: біла основа, прохолодний світло-сірий для секцій,
+   глибокий синій зі старого сайту як єдиний акцент (шапка,
+   посилання, кнопки) — впізнаваність і "серйозний фахівець".
    ============================================================ */
 
 :root {
-  --paper:      #EDEAE2; /* фон */
-  --paper-2:    #E3DFD3; /* фон карток/секцій-контраст */
-  --ink:        #23241F; /* основний текст */
-  --ink-soft:   #4B4B42; /* другорядний текст */
-  --line:       #C9C3B2; /* тонкі розділювачі */
-  --pine:       #3B5D50; /* структурний акцент: посилання, заголовки-акценти */
-  --pine-deep:  #2A4339;
-  --ochre:      #B9873E; /* єдиний акцент дії: кнопки CTA */
-  --ochre-deep: #9C6F2E;
+  --paper:      #FFFFFF; /* фон */
+  --paper-2:    #F1F4F9; /* фон карток/секцій-контраст */
+  --ink:        #1C2430; /* основний текст */
+  --ink-soft:   #4A5363; /* другорядний текст */
+  --line:       #DCE2EB; /* тонкі розділювачі */
+  --pine:       #034A91; /* акцент: посилання, шапка */
+  --pine-deep:  #023A72;
+  --ochre:      #034A91; /* кнопки CTA — той самий синій */
+  --ochre-deep: #023A72;
 
   --serif: "Literata", "Georgia", serif;
   --sans:  "Manrope", "Helvetica Neue", Arial, sans-serif;
@@ -62,12 +62,14 @@ a:hover { color: var(--pine-deep); }
   padding: 0 24px;
 }
 
-/* --- Шапка --- */
+/* --- Шапка: синя смуга на всю ширину, як на старому сайті --- */
+.site-header-band { background: var(--pine); }
+
 .site-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 28px 24px;
+  padding: 20px 24px;
   max-width: 1040px;
   margin: 0 auto;
   gap: 16px;
@@ -77,17 +79,17 @@ a:hover { color: var(--pine-deep); }
 .site-header .logo {
   font-family: var(--serif);
   font-size: 1.15rem;
-  color: var(--ink);
+  color: #fff;
   text-decoration: none;
 }
 
-.site-header nav { display: flex; gap: 22px; flex-wrap: wrap; }
+.site-header nav { display: flex; gap: 8px 22px; flex-wrap: wrap; }
 .site-header nav a {
-  color: var(--ink-soft);
+  color: rgba(255, 255, 255, 0.88);
   text-decoration: none;
   font-size: 0.95rem;
 }
-.site-header nav a:hover { color: var(--pine); }
+.site-header nav a:hover { color: #fff; text-decoration: underline; }
 
 /* --- Герой: реальна фраза клієнта як головний візуальний елемент --- */
 .hero {
@@ -120,6 +122,27 @@ a:hover { color: var(--pine-deep); }
   margin-bottom: 32px;
 }
 
+/* Герой з портретом: текст ліворуч, фото праворуч; на телефоні фото зверху */
+.hero-photo {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+.hero-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+@media (max-width: 760px) {
+  .hero-photo { grid-template-columns: 1fr; gap: 28px; }
+  .hero-photo figure { order: -1; }
+  .hero-photo img { max-height: 420px; object-fit: cover; object-position: 50% 30%; }
+}
+.hero-photo figure { margin: 0; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+
 /* --- Кнопки --- */
 .btn {
   display: inline-block;
@@ -135,8 +158,8 @@ a:hover { color: var(--pine-deep); }
 
 .btn-outline {
   display: inline-block;
-  border: 1px solid var(--ink);
-  color: var(--ink);
+  border: 1px solid var(--pine);
+  color: var(--pine);
   padding: 13px 25px;
   border-radius: 3px;
   text-decoration: none;

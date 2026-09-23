@@ -3,16 +3,25 @@ layout: default
 title: Головна
 ---
 
-<section class="hero">
-  <p class="kicker">Психолог, гештальт-терапевт · онлайн та у Києві</p>
-  <blockquote>«Я ніби живу не своє життя»</blockquote>
-  <p class="lede">
-    Так часто починається розмова. Зовні все начебто добре — робота, стосунки,
-    справи. А всередині — розгубленість, втома чи відчуття, що щось не так,
-    і незрозуміло, що саме.
-  </p>
-  <a class="btn" href="{{ '/kontakty/' | relative_url }}">Записатись на консультацію</a>
-  <a class="btn-outline" href="#shlyakhy" style="margin-left:12px;">Що вам ближче</a>
+<section class="hero hero-photo">
+  <div>
+    <p class="kicker">Євген Кочубей · психолог, гештальт-терапевт · онлайн та у Києві</p>
+    <blockquote>«Я ніби живу не своє життя»</blockquote>
+    <p class="lede">
+      Так часто починається розмова. Зовні все начебто добре — робота, стосунки,
+      справи. А всередині — розгубленість, втома чи відчуття, що щось не так,
+      і незрозуміло, що саме.
+    </p>
+    <div class="hero-actions">
+      <a class="btn" href="{{ '/kontakty/' | relative_url }}">Записатись на консультацію</a>
+      <a class="btn-outline" href="#shlyakhy">Що вам ближче</a>
+    </div>
+  </div>
+  <figure>
+    <img src="{{ '/assets/images/portret-holovna.jpg' | relative_url }}"
+         alt="Євген Кочубей, психолог і гештальт-терапевт"
+         width="900" height="1350" fetchpriority="high">
+  </figure>
 </section>
 
 <section class="section" id="shlyakhy">
