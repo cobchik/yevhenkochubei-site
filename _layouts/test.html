@@ -15,12 +15,7 @@ layout: default
 </section>
 
 <section class="section">
-  <div class="test-note">
-    <strong>Це скринінг, а не діагноз.</strong> Тест допомагає зорієнтуватися
-    у своєму стані й зрозуміти, чи варто звернутися по допомогу.
-    Остаточну оцінку може дати лише фахівець після особистої розмови.
-  </div>
-
+  {% comment %}Застереження "скринінг, не діагноз" — всередині самої форми Tally{% endcomment %}
   <div class="tally-block">
     <iframe data-tally-src="https://tally.so/embed/{{ page.tally_id }}?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
             loading="lazy" width="100%" height="600" frameborder="0"
