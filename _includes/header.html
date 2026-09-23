@@ -1,7 +1,10 @@
 <div class="site-header-band">
 <header class="site-header">
   <a class="logo" href="{{ '/' | relative_url }}">Євген Кочубей</a>
-  <nav>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Меню">
+    <span></span><span></span><span></span>
+  </button>
+  <nav id="site-nav">
     <a href="{{ '/choloviky/' | relative_url }}">Для чоловіків</a>
     <a href="{{ '/zagalni-stany/' | relative_url }}">Тривога і стосунки</a>
     <a href="{{ '/samodopomoga/' | relative_url }}">Самодопомога</a>
@@ -12,3 +15,13 @@
   </nav>
 </header>
 </div>
+<script>
+  (function () {
+    var btn = document.querySelector('.nav-toggle');
+    var header = document.querySelector('.site-header');
+    btn.addEventListener('click', function () {
+      var open = header.classList.toggle('nav-open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  })();
+</script>

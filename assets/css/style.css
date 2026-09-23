@@ -91,6 +91,44 @@ a:hover { color: var(--pine-deep); }
 }
 .site-header nav a:hover { color: #fff; text-decoration: underline; }
 
+/* Кнопка-гамбургер: видно лише на вузьких екранах */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: 0;
+  padding: 8px;
+  margin: -8px;
+  cursor: pointer;
+}
+.nav-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  margin: 5px 0;
+  background: #fff;
+  transition: transform 0.2s, opacity 0.2s;
+}
+.nav-open .nav-toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-open .nav-toggle span:nth-child(2) { opacity: 0; }
+.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+@media (max-width: 760px) {
+  .site-header { padding: 16px 20px; }
+  .nav-toggle { display: block; }
+  .site-header nav {
+    display: none;
+    flex-basis: 100%;
+    flex-direction: column;
+    gap: 0;
+  }
+  .nav-open nav { display: flex; }
+  .site-header nav a {
+    padding: 12px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    font-size: 1.05rem;
+  }
+}
+
 /* --- Герой: реальна фраза клієнта як головний візуальний елемент --- */
 .hero {
   padding: 40px 24px 64px;

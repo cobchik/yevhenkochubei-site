@@ -3,6 +3,10 @@ description: "Індивідуальна психотерапія онлайн �
 url: "https://yevhenkochubei.com.ua"
 lang: uk
 google_analytics: "G-PP5ML4BXJX"
+# Перемикач запуску. false = тимчасова адреса: GA4 вимкнено, сторінки
+# закриті від індексації. При переході на домен — true (і повернути CNAME).
+# Через GA4-тег підтверджено Search Console, тож на домені він обов'язковий.
+launched: false
 
 # --- Плагіни (обидва підтримуються нативно GitHub Pages, без Actions) ---
 plugins:
