@@ -27,5 +27,15 @@
     {{ content }}
   </main>
   {% include footer.html %}
+  <script>
+    // Зовнішні посилання (соцмережі, подкаст, джерела) — у новій вкладці;
+    // внутрішні, пошта й телефони — як звичайно
+    document.querySelectorAll('a[href^="http"]').forEach(function (a) {
+      if (a.hostname !== location.hostname) {
+        a.target = '_blank';
+        a.rel = 'noopener';
+      }
+    });
+  </script>
 </body>
 </html>

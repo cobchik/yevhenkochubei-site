@@ -303,6 +303,24 @@ article.post h1 { margin-bottom: 6px; }
   font-size: 0.95rem;
   color: var(--ink-soft);
 }
+.crisis-box {
+  border-left: 3px solid var(--pine);
+  background: var(--paper-2);
+  padding: 20px 24px;
+  max-width: var(--measure);
+}
+.crisis-box h2 { font-size: 1.3rem; }
+.crisis-box ul { padding-left: 1.2em; }
+.crisis-box li { margin-bottom: 0.4em; }
+.crisis-box p:last-child { margin-bottom: 0; }
+
+/* H1 на головній оформлений як невеликий надзаголовок над цитатою */
+h1.kicker {
+  font-family: var(--sans);
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.5;
+}
 
 /* --- Форма / Tally --- */
 .tally-block {
