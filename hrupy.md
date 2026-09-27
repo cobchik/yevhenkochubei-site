@@ -4,7 +4,7 @@ title: Терапевтичні групи
 permalink: /hrupy/
 ---
 
-<section class="hero">
+<section class="hero hero-tight">
   <p class="kicker">Групова терапія</p>
   <h1>Терапевтичні групи</h1>
   <p class="lede">
@@ -12,14 +12,14 @@ permalink: /hrupy/
     інших, вчитеся будувати стосунки та проживати складні переживання в
     безпеці спільноти.
   </p>
+  <p>
+    Зараз групи набрані. Заповніть цю форму, якщо ви хочете, щоб вас
+    повідомили про новий набір у групу. Це ні до чого вас не зобов'язує.
+  </p>
 </section>
 
-<section class="section">
-  <h2>Актуальний набір</h2>
-  <p><em>[Оновити: назва групи, дати, формат, ціна на поточний сезон]</em></p>
+<section class="section section-form">
   <div class="tally-block">
-    <p><strong>Повідомити про новий набір</strong></p>
-    <p>Заповніть цю форму, якщо ви хочете, щоб вас повідомили про новий набір у групу. Це ні до чого вас не зобов'язує.</p>
     <iframe data-tally-src="https://tally.so/embed/aQVq2W?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
             loading="lazy" width="100%" height="300" frameborder="0"
             title="Повідомити про новий набір"></iframe>
