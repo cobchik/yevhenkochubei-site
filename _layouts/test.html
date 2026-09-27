@@ -23,6 +23,12 @@ layout: default
             title="{{ page.title }}"></iframe>
   </div>
   <a class="btn" href="{{ '/kontakty/' | relative_url }}">Записатись на консультацію</a>
+  {% if page.attribution %}
+  <p class="post-meta test-attribution">
+    {{ page.attribution }}
+    {% if page.attribution_url %}<a href="{{ page.attribution_url }}">Джерело</a>{% endif %}
+  </p>
+  {% endif %}
 </section>
 
 <section class="section">

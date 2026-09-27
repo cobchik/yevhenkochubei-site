@@ -303,6 +303,8 @@ article.post h1 { margin-bottom: 6px; }
   font-size: 0.95rem;
   color: var(--ink-soft);
 }
+.test-attribution { margin-top: 24px; max-width: var(--measure); }
+
 .crisis-box {
   border-left: 3px solid var(--pine);
   background: var(--paper-2);
