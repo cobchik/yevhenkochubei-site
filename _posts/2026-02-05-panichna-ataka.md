@@ -36,7 +36,7 @@ excerpt: "Серце гупає, бракує повітря, здається, 
 
 Паніку як окремий клінічний стан виділив американський психіатр Дональд Клейн ще в 1959-1960 роках - він помітив, що препарат іміпрамін блокує напади паніки, хоча не діє так на звичайну тривогу. Це відкриття лягло в основу сучасного розуміння панічного розладу як окремого стану, а не просто "сильної тривоги", і вплинуло на класифікацію тривожних розладів у DSM.
 
-Сучасний погляд: мережевий метааналіз 2022 року порівняв ефективність різних видів психотерапії панічного розладу і підтвердив когнітивно-поведінкову терапію як найбільш дослідженим і ефективний підхід (Papola D. et al., 2022, "Comparative efficacy and acceptability of psychotherapies for panic disorder with or without agoraphobia", *The British Journal of Psychiatry*, 221(3), 507. <a href="https://doi.org/10.1192/bjp.2022.24" target="_blank" rel="noopener">doi.org/10.1192/bjp.2022.24</a>).
+Сучасний погляд: мережевий метааналіз 2022 року порівняв ефективність різних видів психотерапії панічного розладу і підтвердив когнітивно-поведінкову терапію як найбільш досліджений і ефективний підхід (Papola D. et al., 2022, "Comparative efficacy and acceptability of psychotherapies for panic disorder with or without agoraphobia", *The British Journal of Psychiatry*, 221(3), 507. <a href="https://doi.org/10.1192/bjp.2022.24" target="_blank" rel="noopener">doi.org/10.1192/bjp.2022.24</a>).
 
 <div class="tally-block">
   <p><strong>Хочете зрозуміти рівень своєї тривожності?</strong></p>

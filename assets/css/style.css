@@ -326,8 +326,8 @@ h1.kicker {
 .tally-block {
   border: 1px solid var(--line);
   background: var(--paper-2);
-  padding: 28px;
-  margin: 24px 0;
+  padding: 12px 24px 20px;
+  margin: 0 0 24px;
 }
 
 /* --- Футер --- */
@@ -349,3 +349,7 @@ h1.kicker {
   outline: 2px solid var(--pine);
   outline-offset: 2px;
 }
+
+/* Сторінки з формою одразу після вступу: без лінії й зайвих відступів */
+.hero-tight { padding-bottom: 16px; }
+.section-form { border-top: 0; padding-top: 0; }

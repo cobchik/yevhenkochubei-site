@@ -19,7 +19,7 @@ permalink: /hrupy/
   <p><em>[Оновити: назва групи, дати, формат, ціна на поточний сезон]</em></p>
   <div class="tally-block">
     <p><strong>Повідомити про новий набір</strong></p>
-    <p>Залиште контакт — напишу, коли стартує наступна група.</p>
+    <p>Заповніть цю форму, якщо ви хочете, щоб вас повідомили про новий набір у групу. Це ні до чого вас не зобов'язує.</p>
     <iframe data-tally-src="https://tally.so/embed/aQVq2W?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
             loading="lazy" width="100%" height="300" frameborder="0"
             title="Повідомити про новий набір"></iframe>

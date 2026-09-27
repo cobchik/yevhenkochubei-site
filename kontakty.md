@@ -4,7 +4,7 @@ title: Контакти
 permalink: /kontakty/
 ---
 
-<section class="hero">
+<section class="hero hero-tight">
   <h1>Записатись на консультацію</h1>
   <p class="lede">
     Залиште контакт нижче — я напишу, щоб узгодити зручний час.
@@ -14,7 +14,7 @@ permalink: /kontakty/
   </p>
 </section>
 
-<section class="section">
+<section class="section section-form">
   <div class="tally-block">
     <iframe data-tally-src="https://tally.so/embed/xXK5j9?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
             loading="lazy" width="100%" height="500" frameborder="0"
