@@ -12,6 +12,21 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', '{{ site.google_analytics }}');
+
+    // Надсилання форми Tally → подія в GA4 (запис на консультацію / група / тест)
+    var tallyForms = { xXK5j9: 'consultation', aQVq2W: 'group_waitlist' };
+    window.addEventListener('message', function (e) {
+      if (typeof e.data !== 'string' || e.data.indexOf('Tally.FormSubmitted') === -1) return;
+      try {
+        var p = JSON.parse(e.data).payload || {};
+        var kind = tallyForms[p.formId];
+        if (kind) {
+          gtag('event', 'generate_lead', { form_type: kind });
+        } else {
+          gtag('event', 'test_completed', { form_id: p.formId });
+        }
+      } catch (err) {}
+    });
   </script>
   {% endif %}
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">

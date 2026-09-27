@@ -16,7 +16,7 @@ permalink: /kontakty/
 
 <section class="section">
   <div class="tally-block">
-    <iframe data-tally-src="https://tally.so/embed/ВАШ_ID_ФОРМИ_ЗАПИСУ?alignLeft=1&hideTitle=1&transparentBackground=1"
+    <iframe data-tally-src="https://tally.so/embed/xXK5j9?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
             loading="lazy" width="100%" height="500" frameborder="0"
             title="Записатись на консультацію"></iframe>
   </div>

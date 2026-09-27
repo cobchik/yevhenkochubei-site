@@ -20,7 +20,7 @@ permalink: /hrupy/
   <div class="tally-block">
     <p><strong>Повідомити про новий набір</strong></p>
     <p>Залиште контакт — напишу, коли стартує наступна група.</p>
-    <iframe data-tally-src="https://tally.so/embed/ВАШ_ID_ФОРМИ_ГРУПИ"
+    <iframe data-tally-src="https://tally.so/embed/aQVq2W?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
             loading="lazy" width="100%" height="300" frameborder="0"
             title="Повідомити про новий набір"></iframe>
   </div>
