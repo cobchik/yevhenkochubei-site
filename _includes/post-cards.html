@@ -1,0 +1,15 @@
+{% comment %}
+  Статті блогу картками. {% include post-cards.html %} — усі статті,
+  {% include post-cards.html limit=4 %} — останні N.
+{% endcomment %}
+{% assign cards_limit = include.limit | default: site.posts.size %}
+<div class="cards">
+  {% for post in site.posts limit: cards_limit %}
+  <a class="card" href="{{ post.url | relative_url }}">
+    {% if post.category %}<span class="card-label">{{ post.category }}</span>{% endif %}
+    <span class="card-title">{{ post.title }}</span>
+    <span class="card-text">{{ post.excerpt | strip_html | truncatewords: 26 }}</span>
+    <span class="card-more">Читати →</span>
+  </a>
+  {% endfor %}
+</div>

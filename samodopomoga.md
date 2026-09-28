@@ -7,7 +7,7 @@ permalink: /samodopomoga/
 <section class="hero">
   <h1>Самодопомога</h1>
   <p class="lede">
-    Терапія — лише один зі способів собі допомогти. Тут — науково
+    Терапія — це лише один зі способів собі допомогти. В цьому розділі викладено науково
     обґрунтовані тести для самодіагностики та практики, якими можна
     користуватись самостійно. Все безкоштовно.
   </p>
@@ -27,11 +27,16 @@ permalink: /samodopomoga/
     Тест з'являється тут, щойно його сторінка опублікована (без published: false).
   {% endcomment %}
   {% assign tests = site.pages | where: "layout", "test" | sort: "title" %}
-  <ul class="list-plain">
+  <div class="cards cards-3">
     {% for test in tests %}
-    <li><a href="{{ test.url | relative_url }}">{{ test.title }}</a></li>
+    <a class="card" href="{{ test.url | relative_url }}">
+      <span class="card-label">{{ test.questions }} запитань · {{ test.minutes }} хв</span>
+      <span class="card-title">{{ test.title }}</span>
+      <span class="card-text">{{ test.summary }}</span>
+      <span class="card-more">Пройти тест →</span>
+    </a>
     {% endfor %}
-  </ul>
+  </div>
   <p class="post-excerpt">Нові тести додаються поступово.</p>
 </section>
 

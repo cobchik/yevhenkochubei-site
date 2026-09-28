@@ -5,6 +5,7 @@ description: "Безкоштовний анонімний тест на стил
 permalink: /samodopomoga/test-pryvyazanist/
 test_name: ОСП-22
 tally_id: 2E06XV
+summary: "Який стиль прив'язаності переважає у ваших близьких стосунках."
 questions: 22
 minutes: 5
 attribution: >-

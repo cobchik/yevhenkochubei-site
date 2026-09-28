@@ -5,6 +5,7 @@ description: "Безкоштовний анонімний тест на трив
 permalink: /samodopomoga/test-tryvozhnist/
 test_name: GAD-7
 tally_id: obAbZx
+summary: "Наскільки тривога впливала на вас останні два тижні."
 questions: 7
 minutes: 2
 ---

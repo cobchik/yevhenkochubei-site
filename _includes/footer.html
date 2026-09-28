@@ -1,22 +1,32 @@
 <footer class="site-footer">
-  <p>
-    Євген Кочубей — клінічний психолог, гештальт-психотерапевт.<br>
-    Онлайн та у Києві.
-  </p>
-  <p>
-    <a href="https://www.facebook.com/yevhenkochubei">Facebook</a> ·
-    <a href="https://www.instagram.com/yevhenkochubei/">Instagram</a> ·
-    <a href="https://www.linkedin.com/in/yevhenkochubei/">LinkedIn</a> ·
-    <a href="https://www.t.me/yevhenkochubei">Telegram</a> ·
-    <a href="https://bamanawom.com.ua/">Подкаст «Між чоловіком і жінкою»</a>
-  </p>
-  <p>
-    <a href="{{ '/hrupy/' | relative_url }}">Терапевтичні групи</a> ·
-    <a href="{{ '/dlya-kompaniy/' | relative_url }}">Для компаній</a>
-  </p>
-  <p>
-    <a href="{{ '/terapevtychnyi-kontrakt/' | relative_url }}">Терапевтичний контракт</a> ·
-    <a href="{{ '/polityka-konfidentsiinosti/' | relative_url }}">Політика конфіденційності</a>
-  </p>
-  <p>© {{ 'now' | date: "%Y" }} Євген Кочубей</p>
+  <div class="footer-cols">
+    <div class="footer-about">
+      <h4>Євген Кочубей</h4>
+      <p>
+        Клінічний психолог, гештальт-психотерапевт.<br>
+        Онлайн та в Києві.
+      </p>
+      <p><a href="{{ '/kontakty/' | relative_url }}">Записатись на консультацію →</a></p>
+    </div>
+    <div>
+      <h4>Сторінки</h4>
+      <ul>
+        <li><a href="{{ '/hrupy/' | relative_url }}">Терапевтичні групи</a></li>
+        <li><a href="{{ '/dlya-kompaniy/' | relative_url }}">Для компаній</a></li>
+        <li><a href="{{ '/terapevtychnyi-kontrakt/' | relative_url }}">Терапевтичний контракт</a></li>
+        <li><a href="{{ '/polityka-konfidentsiinosti/' | relative_url }}">Політика конфіденційності</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>У мережі</h4>
+      <ul>
+        <li><a href="https://www.t.me/yevhenkochubei">Telegram</a></li>
+        <li><a href="https://www.instagram.com/yevhenkochubei/">Instagram</a></li>
+        <li><a href="https://www.facebook.com/yevhenkochubei">Facebook</a></li>
+        <li><a href="https://www.linkedin.com/in/yevhenkochubei/">LinkedIn</a></li>
+        <li><a href="https://bamanawom.com.ua/">Подкаст «Між чоловіком і жінкою»</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="footer-copy">© {{ 'now' | date: "%Y" }} Євген Кочубей</p>
 </footer>

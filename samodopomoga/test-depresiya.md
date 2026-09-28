@@ -5,6 +5,7 @@ description: "Безкоштовний анонімний тест на депр
 permalink: /samodopomoga/test-depresiya/
 test_name: PHQ-9
 tally_id: EkXdDB
+summary: "Як часто вас турбували типові прояви депресії останні два тижні."
 questions: 9
 minutes: 3
 ---

@@ -1,14 +1,14 @@
 ---
 layout: default
-title: Психолог і психотерапевт онлайн та у Києві
+title: Психолог і психотерапевт онлайн та в Києві
 ---
 
 <section class="hero hero-photo">
   <div>
-    <h1 class="kicker">Євген Кочубей · клінічний психолог, гештальт-психотерапевт · онлайн та у Києві</h1>
+    <h1 class="kicker">Євген Кочубей · клінічний психолог, гештальт-психотерапевт · онлайн та в Києві</h1>
     <blockquote>«Я ніби живу не своє життя»</blockquote>
     <p class="lede">
-      Так часто починається розмова. Зовні все начебто добре — робота, стосунки,
+      Так часто починається розмова в кабінеті. Зовні все начебто добре — робота, стосунки,
       справи, а всередині — розгубленість, втома чи відчуття, що щось не так,
       і незрозуміло, що саме.
     </p>
@@ -29,7 +29,7 @@ title: Психолог і психотерапевт онлайн та у Ки�
     <div class="path-card">
       <h3>Чоловіки в кризі</h3>
       <p>
-        Зовні все функціонує — кар'єра, бізнес, сім'я, — але всередині втома,
+        Зовні все функціонує — кар'єра, бізнес, сім'я, але всередині втома,
         розгубленість, відчуття, що живете не своє життя, труднощі з близькістю.
       </p>
       <p><a href="{{ '/choloviky/' | relative_url }}">Детальніше →</a></p>
@@ -60,27 +60,8 @@ title: Психолог і психотерапевт онлайн та у Ки�
 
 <section class="section">
   <h2>Останнє в блозі</h2>
-  <ul class="post-list">
-    {% for post in site.posts limit:4 %}
-    <li>
-      <div class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></div>
-      <div class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 24 }}</div>
-    </li>
-    {% endfor %}
-  </ul>
+  {% include post-cards.html limit=4 %}
   <p><a href="{{ '/blog/' | relative_url }}">Усі статті →</a></p>
 </section>
 
-<section class="section-alt">
-  <div class="wrap">
-    <h2>Формат роботи</h2>
-    <ul class="list-plain">
-      <li>Онлайн (Zoom) або офлайн у Києві, м. Печерська</li>
-      <li>Індивідуальна консультація — 50 хв, 2000 грн</li>
-      <li><a href="{{ '/hrupy/' | relative_url }}">Терапевтичні групи</a> — чоловіча та змішана</li>
-      <li>Працюю в гештальт-підході, з елементами КПТ, майндфулнес, екзистенційного аналізу</li>
-      <li>Умови роботи — у <a href="{{ '/terapevtychnyi-kontrakt/' | relative_url }}">терапевтичному контракті</a></li>
-    </ul>
-    <a class="btn" href="{{ '/kontakty/' | relative_url }}">Записатись на консультацію</a>
-  </div>
-</section>
+{% include consultation.html %}

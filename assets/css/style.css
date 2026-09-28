@@ -316,32 +316,56 @@ article.post h1 { margin-bottom: 6px; }
 .crisis-box li { margin-bottom: 0.4em; }
 .crisis-box p:last-child { margin-bottom: 0; }
 
-/* H1 на головній оформлений як невеликий надзаголовок над цитатою */
-h1.kicker {
+/* H1 на головній — надзаголовок над цитатою, помітний, але менший за цитату */
+.hero h1.kicker {
   font-family: var(--sans);
-  font-weight: 400;
+  font-size: clamp(1.05rem, 1.6vw, 1.3rem);
+  font-weight: 500;
+  color: var(--ink);
   letter-spacing: 0;
-  line-height: 1.5;
+  line-height: 1.45;
 }
 
-/* --- Форма / Tally --- */
+/* --- Форма / Tally: не ширша за зручну колонку --- */
 .tally-block {
   border: 1px solid var(--line);
   background: var(--paper-2);
   padding: 12px 24px 20px;
   margin: 0 0 24px;
+  max-width: 680px;
 }
 
-/* --- Футер --- */
+/* --- Футер: три колонки на широкому екрані --- */
 .site-footer {
-  padding: 48px 24px 64px;
+  padding: 40px 24px 32px;
   max-width: 1040px;
   margin: 0 auto;
   color: var(--ink-soft);
   font-size: 0.9rem;
+  border-top: 1px solid var(--line);
 }
 .site-footer a { color: var(--ink-soft); }
 .site-footer a:hover { color: var(--pine); }
+.footer-cols {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  gap: 24px 40px;
+}
+.footer-cols h4 {
+  margin: 0 0 8px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink);
+}
+.footer-cols ul { list-style: none; padding: 0; margin: 0; }
+.footer-cols li { margin-bottom: 4px; }
+.footer-cols p { margin: 0 0 8px; }
+.footer-copy { margin: 28px 0 0; font-size: 0.8rem; }
+@media (max-width: 760px) {
+  .footer-cols { grid-template-columns: 1fr 1fr; }
+  .footer-about { grid-column: 1 / -1; }
+}
 
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
@@ -355,3 +379,165 @@ h1.kicker {
 /* Сторінки з формою одразу після вступу: без лінії й зайвих відступів */
 .hero-tight { padding-bottom: 16px; }
 .section-form { border-top: 0; padding-top: 0; }
+
+/* --- Шапка на широкому екрані: нижча, текст більший --- */
+@media (min-width: 761px) {
+  .site-header { padding-top: 14px; padding-bottom: 14px; }
+  .site-header .logo-name { font-size: 1.35rem; }
+  .site-header .logo-tagline { font-size: 0.88rem; }
+  .site-header nav a { font-size: 1.02rem; }
+}
+
+/* --- Блок "Вартість консультації" --- */
+.price-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 40px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--pine);
+  padding: 24px 28px;
+  margin: 8px 0 32px;
+}
+.price-main { display: flex; flex-direction: column; }
+.price-sum {
+  font-family: var(--serif);
+  font-size: 2.4rem;
+  line-height: 1.1;
+  color: var(--pine);
+}
+.price-unit { color: var(--ink-soft); }
+.price-details { list-style: none; padding: 0; margin: 0; flex: 1 1 280px; }
+.price-details li { padding: 4px 0; }
+
+.steps {
+  list-style: none;
+  counter-reset: step;
+  padding: 0;
+  margin: 12px 0 28px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.steps li {
+  counter-increment: step;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+.steps li::before {
+  content: counter(step);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--pine);
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.steps strong { display: block; color: var(--ink); }
+@media (max-width: 760px) {
+  .steps { grid-template-columns: 1fr 1fr; }
+}
+.price-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; }
+.not-working-with { margin-top: 20px; max-width: var(--measure); }
+
+/* --- Поширені питання --- */
+.faq { max-width: 760px; margin-bottom: 20px; }
+.faq details { border-top: 1px solid var(--line); }
+.faq details:last-child { border-bottom: 1px solid var(--line); }
+.faq summary {
+  cursor: pointer;
+  padding: 14px 32px 14px 0;
+  font-weight: 600;
+  list-style: none;
+  position: relative;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after {
+  content: "+";
+  position: absolute;
+  right: 4px;
+  top: 10px;
+  font-size: 1.4rem;
+  color: var(--pine);
+}
+.faq details[open] summary::after { content: "−"; }
+.faq details p { margin: 0 0 16px; color: var(--ink-soft); }
+
+/* --- Картки (статті блогу, тести) --- */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 8px 0 24px;
+}
+.cards-3 { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 900px) { .cards-3 { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) { .cards, .cards-3 { grid-template-columns: 1fr; } }
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 22px 24px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--pine);
+  border-radius: 4px;
+  text-decoration: none;
+  color: var(--ink);
+  transition: box-shadow 0.15s, transform 0.15s;
+}
+.card:hover {
+  box-shadow: 0 6px 20px rgba(3, 74, 145, 0.12);
+  transform: translateY(-2px);
+  color: var(--ink);
+}
+.card-label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--pine);
+  font-weight: 600;
+}
+.card-title { font-family: var(--serif); font-size: 1.2rem; line-height: 1.3; }
+.card-text { color: var(--ink-soft); font-size: 0.95rem; flex: 1; }
+.card-more { color: var(--pine); font-weight: 600; font-size: 0.95rem; }
+.section-alt .card { background: #fff; }
+
+/* --- Кнопки соцмереж --- */
+.social-links { display: flex; flex-wrap: wrap; gap: 12px; }
+.social-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid var(--pine);
+  border-radius: 999px;
+  color: var(--pine);
+  background: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+.social-btn:hover { background: var(--pine); color: #fff; }
+
+/* --- Освіта і сертифікати --- */
+.edu-list li { display: flex; gap: 16px; }
+.edu-year { flex: 0 0 3.2em; font-weight: 600; color: var(--pine); }
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+  margin-top: 12px;
+}
+.cert {
+  display: block;
+  aspect-ratio: 3 / 4;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  overflow: hidden;
+  background: var(--paper-2);
+}
+.cert img { width: 100%; height: 100%; object-fit: contain; display: block; transition: transform 0.2s; }
+.cert:hover img { transform: scale(1.04); }
