@@ -5,7 +5,8 @@
 {% assign cards_limit = include.limit | default: site.posts.size %}
 <div class="cards">
   {% for post in site.posts limit: cards_limit %}
-  <a class="card" href="{{ post.url | relative_url }}">
+  {% assign cat_color = site.data.categories[post.category].color | default: "#034A91" %}
+  <a class="card" href="{{ post.url | relative_url }}" style="--card-color: {{ cat_color }}">
     {% if post.category %}<span class="card-label">{{ post.category }}</span>{% endif %}
     <span class="card-title">{{ post.title }}</span>
     <span class="card-text">{{ post.excerpt | strip_html | truncatewords: 26 }}</span>

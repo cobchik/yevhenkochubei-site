@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "З чим працюю: тривога, депресія, стосунки, самооцінка"
-permalink: /zagalni-stany/
+permalink: /z-chym-pratsiuiu/
 ---
 
 <section class="hero">
