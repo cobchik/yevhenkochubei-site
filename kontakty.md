@@ -27,7 +27,7 @@ permalink: /kontakty/
 <section class="section-alt">
   <div class="wrap">
     <h2>Де мене знайти</h2>
-    <p>Пишу про психологію, стосунки й життя — в соцмережах і в подкасті.</p>
+    <p>Пишу про психологію, стосунки й життя в соцмережах, говорю в подкасті.</p>
     <div class="social-links">
       <a class="social-btn" href="https://www.t.me/yevhenkochubei">Telegram</a>
       <a class="social-btn" href="https://www.instagram.com/yevhenkochubei/">Instagram</a>

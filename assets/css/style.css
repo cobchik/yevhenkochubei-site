@@ -443,7 +443,12 @@ article.post h1 { margin-bottom: 6px; }
   .steps { grid-template-columns: 1fr 1fr; }
 }
 .price-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; }
-.not-working-with { margin-top: 20px; max-width: var(--measure); }
+.not-working-with {
+  margin-top: 40px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  max-width: var(--measure);
+}
 
 /* --- Поширені питання --- */
 .faq { max-width: 760px; margin-bottom: 20px; }
