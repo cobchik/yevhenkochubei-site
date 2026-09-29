@@ -30,7 +30,8 @@
 * { box-sizing: border-box; }
 
 html {
-  scroll-padding-top: env(safe-area-inset-top, 0px);
+  /* щоб при переході за якорем (#pytannia тощо) заголовок не ховався під шапку */
+  scroll-padding-top: 96px;
 }
 
 body {
@@ -68,7 +69,13 @@ a:hover { color: var(--pine-deep); }
 }
 
 /* --- Шапка: синя смуга на всю ширину, як на старому сайті --- */
-.site-header-band { background: var(--pine); }
+.site-header-band {
+  background: var(--pine);
+  position: sticky;   /* шапка закріплена вгорі при прокручуванні */
+  top: 0;
+  z-index: 50;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
+}
 
 .site-header {
   display: flex;
