@@ -550,6 +550,10 @@ div.card:hover { box-shadow: none; transform: none; }
 }
 .social-btn:hover { background: var(--pine); color: #fff; }
 
+/* --- Джерела на сторінках практик --- */
+.sources p { font-size: 0.9rem; color: var(--ink-soft); }
+.sources h2 { font-size: 1.3rem; }
+
 /* --- Збільшення картинок (lightbox) --- */
 a.zoom { cursor: zoom-in; }
 .lightbox {

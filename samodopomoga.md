@@ -43,13 +43,19 @@ permalink: /samodopomoga/
 <section class="section-alt">
   <div class="wrap">
     <h2>Практики</h2>
-    <p>Готуються до публікації:</p>
-    <ul class="list-plain">
-      <li>Дихальні вправи для заспокоєння</li>
-      <li>Техніки "заземлення" при тривозі</li>
-      <li>Короткі медитації</li>
-      <li>Таблиця для роботи з тривожними думками (КПТ)</li>
-    </ul>
+    {% comment %}Список будується автоматично зі сторінок з type: practice{% endcomment %}
+    {% assign practices = site.pages | where: "type", "practice" | sort: "title" %}
+    <div class="cards cards-3">
+      {% for pr in practices %}
+      <a class="card" href="{{ pr.url | relative_url }}">
+        <span class="card-label">Практика · {{ pr.minutes }} хв</span>
+        <span class="card-title">{{ pr.title }}</span>
+        <span class="card-text">{{ pr.summary }}</span>
+        <span class="card-more">Спробувати →</span>
+      </a>
+      {% endfor %}
+    </div>
+    <p class="post-meta">Нові практики додаються поступово.</p>
   </div>
 </section>
 
