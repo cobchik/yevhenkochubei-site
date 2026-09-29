@@ -71,9 +71,15 @@ summary: "Прогресивне м'язове розслаблення: вчи�
 </section>
 
 <section class="section">
-  <div class="tally-block">
-    <p><strong>Тіло тримає напругу, а причина не завжди зрозуміла?</strong></p>
-    <a class="btn-outline" href="{{ '/samodopomoga/test-tryvozhnist/' | relative_url }}">Пройти тест на тривожність →</a>
+  <div class="cta-pair">
+    <div class="tally-block">
+      <p><strong>Тіло тримає напругу, а причина не завжди зрозуміла?</strong></p>
+      <a class="btn-outline" href="{{ '/samodopomoga/test-tryvozhnist/' | relative_url }}">Пройти тест на тривожність →</a>
+    </div>
+    <div class="tally-block">
+      <p><strong>Чому тіло іноді реагує так, ніби небезпека тут і зараз?</strong></p>
+      <a class="btn-outline" href="{{ '/blog/panichna-ataka/' | relative_url }}">Читати про панічні атаки →</a>
+    </div>
   </div>
 </section>
 

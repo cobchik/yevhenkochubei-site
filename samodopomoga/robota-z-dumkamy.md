@@ -53,9 +53,15 @@ summary: "Таблиця думок з КПТ: як побачити триво�
     щоб знайти чеснішу — таку, що враховує всі наявні факти, а не лише ті,
     що підтверджують початковий страх.
   </p>
-  <div class="tally-block">
-    <p><strong>Якщо такі думки повторюються часто й важко з ними впоратися самостійно</strong></p>
-    <a class="btn-outline" href="{{ '/samodopomoga/test-tryvozhnist/' | relative_url }}">Пройти тест на тривожність →</a>
+  <div class="cta-pair">
+    <div class="tally-block">
+      <p><strong>Якщо такі думки повторюються часто й важко з ними впоратися самостійно</strong></p>
+      <a class="btn-outline" href="{{ '/samodopomoga/test-tryvozhnist/' | relative_url }}">Пройти тест на тривожність →</a>
+    </div>
+    <div class="tally-block">
+      <p><strong>Негативні думки про себе не відпускають тижнями?</strong></p>
+      <a class="btn-outline" href="{{ '/blog/depresiya/' | relative_url }}">Читати про депресію →</a>
+    </div>
   </div>
 </section>
 
