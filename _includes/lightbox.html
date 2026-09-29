@@ -1,0 +1,25 @@
+{% comment %}
+  Збільшення картинок по кліку: будь-яке посилання з класом "zoom",
+  що веде на картинку, відкривається поверх сторінки.
+  Закрити — клік, Esc або кнопка ×.
+{% endcomment %}
+<dialog class="lightbox" id="lightbox" aria-label="Збільшене зображення">
+  <button class="lightbox-close" type="button" aria-label="Закрити">×</button>
+  <img alt="">
+</dialog>
+<script>
+  (function () {
+    var box = document.getElementById('lightbox');
+    if (!box || !box.showModal) return;
+    var img = box.querySelector('img');
+    document.querySelectorAll('a.zoom').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        img.src = a.href;
+        img.alt = (a.querySelector('img') || {}).alt || '';
+        box.showModal();
+      });
+    });
+    box.addEventListener('click', function () { box.close(); });
+  })();
+</script>

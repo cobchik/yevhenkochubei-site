@@ -521,6 +521,9 @@ article.post h1 { margin-bottom: 6px; }
   transform: translateY(-2px);
   color: var(--ink);
 }
+/* Інформаційні картки (не посилання) не "підстрибують" при наведенні */
+div.card:hover { box-shadow: none; transform: none; }
+
 .card-label {
   font-size: 0.78rem;
   text-transform: uppercase;
@@ -546,6 +549,82 @@ article.post h1 { margin-bottom: 6px; }
   font-weight: 500;
 }
 .social-btn:hover { background: var(--pine); color: #fff; }
+
+/* --- Збільшення картинок (lightbox) --- */
+a.zoom { cursor: zoom-in; }
+.lightbox {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  max-width: 96vw;
+  max-height: 94vh;
+  overflow: visible;
+}
+.lightbox::backdrop { background: rgba(10, 20, 35, 0.85); }
+.lightbox img {
+  display: block;
+  max-width: 96vw;
+  max-height: 94vh;
+  background: #fff;
+  border-radius: 4px;
+  cursor: zoom-out;
+}
+.lightbox-close {
+  position: fixed;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: 0;
+  color: #fff;
+  font-size: 2.4rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/* --- Картинки на сторінці "Для компаній" --- */
+.figure-zoom { margin: 0 0 12px; }
+.figure-zoom img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: #fff;
+}
+.figure-zoom figcaption { font-size: 0.85rem; color: var(--ink-soft); margin-top: 6px; }
+.report-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+@media (max-width: 760px) { .report-grid { grid-template-columns: 1fr; } }
+.model-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: center; }
+@media (max-width: 760px) { .model-wrap { grid-template-columns: 1fr; } }
+.quote {
+  border-left: 4px solid var(--pine);
+  background: var(--paper);
+  padding: 20px 24px;
+  margin: 0 0 24px;
+  max-width: var(--text-width);
+  font-size: 1.05rem;
+}
+.quote footer { margin-top: 10px; font-size: 0.9rem; color: var(--ink-soft); }
+.quotes-small { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+@media (max-width: 760px) { .quotes-small { grid-template-columns: 1fr; } }
+.quotes-small blockquote {
+  margin: 0;
+  padding: 16px 18px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+.stat-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 0 0 20px; max-width: var(--text-width); }
+@media (max-width: 640px) { .stat-row { grid-template-columns: 1fr; } }
+.stat { border-left: 4px solid var(--pine); padding: 4px 0 4px 16px; }
+.stat-num { display: block; font-family: var(--serif); font-size: 2.2rem; line-height: 1.1; color: var(--pine); }
+.stat-text { color: var(--ink-soft); font-size: 0.95rem; }
 
 /* --- Освіта і сертифікати --- */
 .edu-list li { display: flex; gap: 16px; }

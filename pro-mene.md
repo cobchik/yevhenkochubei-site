@@ -57,7 +57,7 @@ permalink: /pro-mene/
     {% for f in certs %}
     {% assign ext = f.extname | downcase %}
     {% if ext == ".jpg" or ext == ".jpeg" or ext == ".png" or ext == ".webp" %}
-    <a class="cert" href="{{ f.path | relative_url }}" target="_blank" rel="noopener">
+    <a class="cert zoom" href="{{ f.path | relative_url }}">
       <img src="{{ f.path | relative_url }}" alt="Диплом або сертифікат {{ forloop.index }}" loading="lazy">
     </a>
     {% endif %}
