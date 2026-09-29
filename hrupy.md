@@ -4,7 +4,7 @@ title: Терапевтичні групи
 permalink: /hrupy/
 ---
 
-<section class="hero hero-tight">
+<section class="hero">
   <p class="kicker">Групова терапія</p>
   <h1>Терапевтичні групи</h1>
   <p class="lede">
@@ -18,7 +18,7 @@ permalink: /hrupy/
   </p>
 </section>
 
-<section class="section section-form">
+<section class="section">
   <div class="tally-block">
     <iframe data-tally-src="https://tally.so/embed/aQVq2W?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
             loading="lazy" width="100%" height="300" frameborder="0"

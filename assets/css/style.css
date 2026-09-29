@@ -19,7 +19,12 @@
   --serif: "Literata", "Georgia", serif;
   --sans:  "Manrope", "Helvetica Neue", Arial, sans-serif;
 
-  --measure: 64ch; /* ширина тексту < 80 символів у рядку */
+  /* Єдина система розмірів для всіх сторінок */
+  --text-width: 760px;  /* максимальна ширина будь-якого текстового блоку */
+  --space: 48px;        /* відступ над і під кожною лінією/секцією */
+}
+@media (max-width: 760px) {
+  :root { --space: 36px; }
 }
 
 * { box-sizing: border-box; }
@@ -51,7 +56,7 @@ h1 { font-size: clamp(2rem, 5vw, 3.4rem); font-weight: 450; letter-spacing: -0.0
 h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); }
 h3 { font-size: 1.3rem; }
 
-p { margin: 0 0 1.1em; max-width: var(--measure); }
+p { margin: 0 0 1.1em; max-width: var(--text-width); }
 
 a { color: var(--pine); text-decoration-thickness: 1px; text-underline-offset: 3px; }
 a:hover { color: var(--pine-deep); }
@@ -141,7 +146,7 @@ a:hover { color: var(--pine-deep); }
 
 /* --- Герой: реальна фраза клієнта як головний візуальний елемент --- */
 .hero {
-  padding: 40px 24px 64px;
+  padding: var(--space) 24px;
   max-width: 1040px;
   margin: 0 auto;
 }
@@ -166,9 +171,10 @@ a:hover { color: var(--pine-deep); }
 .hero .lede {
   font-size: 1.15rem;
   color: var(--ink-soft);
-  max-width: 75ch;
+  max-width: var(--text-width);
   margin-bottom: 32px;
 }
+.hero .lede p { max-width: none; }
 
 /* Герой з портретом: текст ліворуч, фото праворуч; на телефоні фото зверху */
 .hero-photo {
@@ -187,7 +193,7 @@ a:hover { color: var(--pine-deep); }
   .hero-photo { grid-template-columns: 1fr; gap: 28px; }
   .hero-photo figure { order: -1; }
   .hero-photo img { height: 260px; object-fit: cover; object-position: 50% 35%; }
-  .hero { padding-top: 24px; }
+  .hero-photo { padding-top: 24px; }
 }
 .hero-photo figure { margin: 0; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
@@ -218,7 +224,7 @@ a:hover { color: var(--pine-deep); }
 
 /* --- Секції --- */
 .section {
-  padding: 56px 24px;
+  padding: var(--space) 24px;
   max-width: 1040px;
   margin: 0 auto;
   border-top: 1px solid var(--line);
@@ -229,7 +235,23 @@ a:hover { color: var(--pine-deep); }
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
-.section-alt > .wrap { padding: 56px 24px; }
+.section-alt > .wrap { padding: var(--space) 24px; }
+
+/* Лінія між секціями — завжди одна (не подвоюється на стику сірої й білої) */
+.section-alt + .section,
+.section-alt + .section-alt,
+.section-alt + article.section { border-top: none; }
+main > .section-alt:last-child { border-bottom: none; }
+
+/* Останній елемент блоку не додає зайвого місця — відступ задає лише --space */
+.hero > :last-child,
+.hero-photo > div > :last-child,
+.section > :last-child,
+.section > div > :last-child,
+.section-alt > .wrap > :last-child,
+.section-alt > .wrap > div > :last-child,
+.crisis-box > :last-child,
+.lede > :last-child { margin-bottom: 0; }
 
 .two-paths {
   display: grid;
@@ -253,6 +275,7 @@ a:hover { color: var(--pine-deep); }
   list-style: none;
   padding: 0;
   margin: 0 0 1.2em;
+  max-width: var(--text-width);
 }
 .list-plain li {
   padding: 10px 0;
@@ -264,7 +287,7 @@ a:hover { color: var(--pine-deep); }
 /* --- Терапевтичний контракт --- */
 .contract h2 { margin-top: 1.6em; }
 .contract h2:first-child { margin-top: 0; }
-.contract ul { padding-left: 1.2em; max-width: var(--measure); }
+.contract ul { padding-left: 1.2em; max-width: var(--text-width); }
 .contract li { margin-bottom: 0.6em; }
 .contract .btn { margin-top: 1.5em; }
 
@@ -297,19 +320,19 @@ article.post h1 { margin-bottom: 6px; }
   border-left: 3px solid var(--pine);
   background: var(--paper-2);
   padding: 16px 20px;
-  max-width: var(--measure);
+  max-width: var(--text-width);
 }
 .crisis-note {
   font-size: 0.95rem;
   color: var(--ink-soft);
 }
-.test-attribution { margin-top: 24px; max-width: var(--measure); }
+.test-attribution { margin-top: 24px; max-width: var(--text-width); }
 
 .crisis-box {
   border-left: 3px solid var(--pine);
   background: var(--paper-2);
   padding: 20px 24px;
-  max-width: var(--measure);
+  max-width: var(--text-width);
 }
 .crisis-box h2 { font-size: 1.3rem; }
 .crisis-box ul { padding-left: 1.2em; }
@@ -332,7 +355,7 @@ article.post h1 { margin-bottom: 6px; }
   background: var(--paper-2);
   padding: 12px 24px 20px;
   margin: 0 0 24px;
-  max-width: 680px;
+  max-width: var(--text-width);
 }
 
 /* --- Футер: три колонки на широкому екрані --- */
@@ -376,9 +399,6 @@ article.post h1 { margin-bottom: 6px; }
   outline-offset: 2px;
 }
 
-/* Сторінки з формою одразу після вступу: без лінії й зайвих відступів */
-.hero-tight { padding-bottom: 16px; }
-.section-form { border-top: 0; padding-top: 0; }
 
 /* --- Шапка на широкому екрані: нижча, текст більший --- */
 @media (min-width: 761px) {
@@ -447,11 +467,11 @@ article.post h1 { margin-bottom: 6px; }
   margin-top: 40px;
   padding-top: 16px;
   border-top: 1px solid var(--line);
-  max-width: var(--measure);
+  max-width: var(--text-width);
 }
 
 /* --- Поширені питання --- */
-.faq { max-width: 760px; margin-bottom: 20px; }
+.faq { max-width: var(--text-width); margin-bottom: 20px; }
 .faq details { border-top: 1px solid var(--line); }
 .faq details:last-child { border-bottom: 1px solid var(--line); }
 .faq summary {
@@ -529,6 +549,11 @@ article.post h1 { margin-bottom: 6px; }
 
 /* --- Освіта і сертифікати --- */
 .edu-list li { display: flex; gap: 16px; }
+/* Підзаголовки всередині секції — однаковий відступ зверху */
+.section > h3,
+.section-alt > .wrap > h3 { margin-top: 1.4em; }
+.section > h2 + h3,
+.section-alt > .wrap > h2 + h3 { margin-top: 0; }
 .edu-year { flex: 0 0 3.2em; font-weight: 600; color: var(--pine); }
 .cert-grid {
   display: grid;
