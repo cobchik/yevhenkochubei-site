@@ -550,6 +550,11 @@ div.card:hover { box-shadow: none; transform: none; }
 }
 .social-btn:hover { background: var(--pine); color: #fff; }
 
+/* --- Два блоки-заклики поруч (на телефоні — один під одним) --- */
+.cta-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.cta-pair .tally-block { margin: 0; max-width: none; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; }
+@media (max-width: 760px) { .cta-pair { grid-template-columns: 1fr; } }
+
 /* --- Джерела на сторінках практик --- */
 .sources p { font-size: 0.9rem; color: var(--ink-soft); }
 .sources h2 { font-size: 1.3rem; }
