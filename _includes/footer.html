@@ -12,7 +12,8 @@
       <h4>Сторінки</h4>
       <ul>
         <li><a href="{{ '/hrupy/' | relative_url }}">Терапевтичні групи</a></li>
-        <li><a href="{{ '/dlya-kompaniy/' | relative_url }}">Для компаній</a></li>
+        {% assign b2b_page = site.pages | where: "url", "/dlya-kompaniy/" | first %}
+        {% if b2b_page %}<li><a href="{{ '/dlya-kompaniy/' | relative_url }}">Для компаній</a></li>{% endif %}
         <li><a href="{{ '/terapevtychnyi-kontrakt/' | relative_url }}">Терапевтичний контракт</a></li>
         <li><a href="{{ '/polityka-konfidentsiinosti/' | relative_url }}">Політика конфіденційності</a></li>
       </ul>
