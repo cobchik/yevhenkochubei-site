@@ -66,11 +66,12 @@ summary: "Прогресивне м'язове розслаблення: вчи�
     спосіб зняти фізичну й психічну напругу.
   </p>
   <p>
-    Сучасний погляд: систематичний огляд і метааналіз 2024 року підтвердив,
-    що прогресивне м'язове розслаблення достовірно знижує рівень тривоги
-    (Heshmatifar N., Manzari Z. S., Heydari A., 2024, «The effect of progressive
-    muscle relaxation on anxiety during the COVID-19 pandemic: A systematic
-    review and meta-analysis», <em>Navid No</em>, 27(90), 60–73.
-    <a href="https://doi.org/10.22038/nnj.2024.77557.1433">doi.org/10.22038/nnj.2024.77557.1433</a>).
+    Сучасний погляд: систематичний огляд 2024 року, що охопив 46 досліджень
+    із 16 країн і понад 3400 учасників, підтвердив, що прогресивне м'язове
+    розслаблення ефективно знижує рівень стресу, тривоги й депресії в дорослих
+    (Khir S. et al., 2024, «Efficacy of Progressive Muscle Relaxation in Adults
+    for Stress, Anxiety, and Depression: A Systematic Review»,
+    <em>Psychology Research and Behavior Management</em>, 17, 345–365.
+    <a href="https://doi.org/10.2147/PRBM.S437277">doi.org/10.2147/PRBM.S437277</a>).
   </p>
 </section>
