@@ -262,6 +262,15 @@ permalink: /dlya-kompaniy/
     зведені знеособлені звіти по командах. Так само компанія не дізнається,
     хто з працівників звертався по консультації і з чим.
   </p>
-  {% comment %}Тимчасово — e-mail; після створення B2B-форми в Tally тут буде форма{% endcomment %}
-  <a class="btn" href="mailto:yevhen.kochubei@gmail.com?subject=Well-being%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B8">Написати на e-mail</a>
+  <div class="tally-block">
+    <iframe data-tally-src="https://tally.so/embed/obXMW5?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+            loading="lazy" width="100%" height="700" frameborder="0"
+            title="Обговорити співпрацю: well-being команди"></iframe>
+  </div>
+  <p class="post-meta">
+    Або напишіть на <a href="mailto:yevhen.kochubei@gmail.com">yevhen.kochubei@gmail.com</a>
+    чи в <a href="https://www.linkedin.com/in/yevhenkochubei/">LinkedIn</a>.
+  </p>
 </section>
+
+<script async src="https://tally.so/widgets/embed.js"></script>

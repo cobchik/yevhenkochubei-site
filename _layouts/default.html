@@ -14,7 +14,7 @@
     gtag('config', '{{ site.google_analytics }}');
 
     // Надсилання форми Tally → подія в GA4 (запис на консультацію / група / тест)
-    var tallyForms = { xXK5j9: 'consultation', aQVq2W: 'group_waitlist' };
+    var tallyForms = { xXK5j9: 'consultation', aQVq2W: 'group_waitlist', obXMW5: 'b2b' };
     window.addEventListener('message', function (e) {
       if (typeof e.data !== 'string' || e.data.indexOf('Tally.FormSubmitted') === -1) return;
       try {
