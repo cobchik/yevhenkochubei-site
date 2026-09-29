@@ -63,3 +63,13 @@ permalink: /z-chym-pratsiuiu/
     <a class="btn" href="{{ '/hrupy/' | relative_url }}">Хочу в групу</a>
   </div>
 </section>
+
+<section class="section">
+  <h2>Для компаній</h2>
+  <p>
+    Працюю також з командами: діагностика професійного благополуччя,
+    тренінги з профілактики вигорання, супровід керівників і психологічна
+    підтримка працівників.
+  </p>
+  <a class="btn-outline" href="{{ '/dlya-kompaniy/' | relative_url }}">Детальніше про роботу з командами →</a>
+</section>

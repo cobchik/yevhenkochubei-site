@@ -254,7 +254,7 @@ permalink: /dlya-kompaniy/
   <h2>Обговорити співпрацю</h2>
   <p>
     Розкажіть коротко про команду і запит. Я напишу, щоб домовитися про
-    знайомство. Мета першої розмови - знайти точки спільного інтересу.
+    знайомство. Мета першої розмови — знайти точки спільного інтересу.
   </p>
   <div class="tally-block">
     <iframe data-tally-src="https://tally.so/embed/obXMW5?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
