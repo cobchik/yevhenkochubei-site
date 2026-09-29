@@ -562,6 +562,9 @@ div.card:hover { box-shadow: none; transform: none; }
 .cta-pair .tally-block { margin: 0; max-width: none; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; }
 @media (max-width: 760px) { .cta-pair { grid-template-columns: 1fr; } }
 
+/* --- "Хлібні крихти" над заголовком статті: Блог · Категорія --- */
+.breadcrumbs { font-size: 0.95rem; color: var(--ink-soft); margin-bottom: 12px; }
+
 /* --- Джерела на сторінках практик --- */
 .sources p { font-size: 0.9rem; color: var(--ink-soft); }
 .sources h2 { font-size: 1.3rem; }

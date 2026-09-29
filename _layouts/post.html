@@ -2,6 +2,9 @@
 layout: default
 ---
 <article class="post section">
+  <p class="kicker breadcrumbs">
+    <a href="{{ '/blog/' | relative_url }}">Блог</a>{% if page.category %} · {{ page.category }}{% endif %}
+  </p>
   <h1>{{ page.title }}</h1>
   <p class="post-meta">
     {{ page.date | date: "%d.%m.%Y" }}
