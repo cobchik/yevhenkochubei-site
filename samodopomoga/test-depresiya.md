@@ -1,6 +1,6 @@
 ---
 layout: test
-title: Тест на депресію (PHQ-9)
+title: "Тест на депресію PHQ-9: онлайн і безкоштовно"
 description: "Безкоштовний анонімний тест на депресію PHQ-9: 9 запитань, 3 хвилини. Скринінг, а не діагноз — з поясненням, що робити з результатом."
 permalink: /samodopomoga/test-depresiya/
 test_name: PHQ-9
