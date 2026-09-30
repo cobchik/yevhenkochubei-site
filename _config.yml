@@ -2,7 +2,20 @@ title: "Євген Кочубей"
 description: "Індивідуальна психотерапія онлайн та у Києві. Допомога чоловікам у кризі сенсу, а також з тривогою, депресією та стосунками."
 url: "https://yevhenkochubei.com.ua"
 lang: uk
+locale: uk_UA
 google_analytics: "G-PP5ML4BXJX"
+
+# --- Для пошуку й соцмереж (jekyll-seo-tag) ---
+author:
+  name: "Євген Кочубей"
+  url: "https://yevhenkochubei.com.ua/pro-mene/"
+social:
+  name: "Євген Кочубей"
+  links:
+    - "https://www.facebook.com/yevhenkochubei"
+    - "https://www.instagram.com/yevhenkochubei/"
+    - "https://www.linkedin.com/in/yevhenkochubei/"
+    - "https://t.me/yevhenkochubei"
 # Перемикач запуску. false = тимчасова адреса: GA4 вимкнено, сторінки
 # закриті від індексації. При переході на домен — true (і повернути CNAME).
 # Через GA4-тег підтверджено Search Console, тож на домені він обов'язковий.
@@ -28,6 +41,7 @@ defaults:
       path: ""
     values:
       layout: "default"
+      image: /assets/images/og-image.jpg   # картинка для превʼю в соцмережах
 
 permalink: /blog/:title/
 

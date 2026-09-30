@@ -1,0 +1,61 @@
+{% comment %}
+  Структуровані дані для Google (schema.org): хто фахівець, що пропонує,
+  де працює. Адреса — так само, як у Google Business Profile ("Київ, Печерськ").
+  Показується лише на головній і сторінці "Про мене".
+{% endcomment %}
+{% if page.url == "/" or page.url == "/pro-mene/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "{{ site.url }}/#person",
+      "name": "Євген Кочубей",
+      "jobTitle": "Клінічний психолог, гештальт-психотерапевт",
+      "url": "{{ site.url }}/",
+      "image": "{{ site.url }}/assets/images/portret-holovna.jpg",
+      "alumniOf": "Київський інститут сучасної психології та психотерапії",
+      "memberOf": { "@type": "Organization", "name": "Національна асоціація гештальт-терапевтів України", "url": "https://gestalt.org.ua/" },
+      "knowsAbout": ["психотерапія", "гештальт-терапія", "тривога", "панічні атаки", "депресія", "стосунки", "криза сенсу", "вигорання"],
+      "sameAs": [
+        "https://www.facebook.com/yevhenkochubei",
+        "https://www.instagram.com/yevhenkochubei/",
+        "https://www.linkedin.com/in/yevhenkochubei/",
+        "https://t.me/yevhenkochubei",
+        "https://bamanawom.com.ua/"
+      ]
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "{{ site.url }}/#practice",
+      "name": "Євген Кочубей — психолог, гештальт-психотерапевт",
+      "description": "Індивідуальна психотерапія онлайн та в Києві: криза, тривога, панічні атаки, депресія, стосунки. Терапевтичні групи. Well-being для команд.",
+      "url": "{{ site.url }}/",
+      "image": "{{ site.url }}/assets/images/og-image.jpg",
+      "priceRange": "2000 грн",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Київ",
+        "addressRegion": "Печерський район",
+        "addressCountry": "UA"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Київ" },
+        { "@type": "Country", "name": "Україна" }
+      ],
+      "founder": { "@id": "{{ site.url }}/#person" },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Послуги",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Індивідуальна консультація психолога, 50 хвилин (онлайн або офлайн)" }, "price": "2000", "priceCurrency": "UAH" },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Терапевтичні групи" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Well-being для команд: діагностика і тренінги" } }
+        ]
+      }
+    }
+  ]
+}
+</script>
+{% endif %}
