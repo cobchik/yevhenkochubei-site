@@ -13,15 +13,21 @@
     gtag('js', new Date());
     gtag('config', '{{ site.google_analytics }}');
 
-    // Надсилання форми Tally → подія в GA4 (запис на консультацію / група / тест)
-    var tallyForms = { xXK5j9: 'consultation', aQVq2W: 'group_waitlist', obXMW5: 'b2b' };
+    // Надсилання форми Tally → подія в GA4.
+    // generate_lead — ЛИШЕ запис на консультацію: це ключова подія, на якій вчиться реклама.
+    // Група і компанії — окремі події, щоб не змішувати їх із клієнтами на консультацію.
+    var tallyForms = {
+      xXK5j9: { event: 'generate_lead',        type: 'consultation' },
+      aQVq2W: { event: 'group_waitlist_signup', type: 'group_waitlist' },
+      obXMW5: { event: 'b2b_lead',             type: 'b2b' }
+    };
     window.addEventListener('message', function (e) {
       if (typeof e.data !== 'string' || e.data.indexOf('Tally.FormSubmitted') === -1) return;
       try {
         var p = JSON.parse(e.data).payload || {};
-        var kind = tallyForms[p.formId];
-        if (kind) {
-          gtag('event', 'generate_lead', { form_type: kind });
+        var f = tallyForms[p.formId];
+        if (f) {
+          gtag('event', f.event, { form_type: f.type });
         } else {
           gtag('event', 'test_completed', { form_id: p.formId });
         }
