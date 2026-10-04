@@ -31,6 +31,7 @@ permalink: /z-chym-pratsiuiu/
       </p>
       <p class="card-links">
         <a href="{{ '/samodopomoga/test-tryvozhnist/' | relative_url }}">Тест на тривожність</a> ·
+        <a href="{{ '/blog/tryvozhnist/' | relative_url }}">Про тривожність</a> ·
         <a href="{{ '/blog/panichna-ataka/' | relative_url }}">Про панічні атаки</a>
       </p>
     </div>
