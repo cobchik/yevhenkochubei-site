@@ -335,6 +335,10 @@ article.post h1 { margin-bottom: 6px; }
 }
 .test-attribution { margin-top: 24px; max-width: var(--text-width); }
 
+/* Блок «Що робити з результатом» під формою тесту */
+.after-test { max-width: var(--text-width); margin: 8px 0 24px; }
+.after-test h2 { font-size: 1.3rem; }
+
 .crisis-box {
   border-left: 3px solid var(--pine);
   background: var(--paper-2);

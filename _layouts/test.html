@@ -22,6 +22,7 @@ layout: default
             loading="lazy" width="100%" height="600" frameborder="0"
             title="{{ page.title }}"></iframe>
   </div>
+  {% if page.after_test %}{% include {{ page.after_test }} %}{% endif %}
   <a class="btn" href="{{ '/kontakty/' | relative_url }}">Записатись на консультацію</a>
   {% if page.attribution %}
   <p class="post-meta test-attribution">
