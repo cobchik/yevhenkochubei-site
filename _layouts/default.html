@@ -33,6 +33,11 @@
         }
       } catch (err) {}
     });
+    // Кліки по посиланнях з data-ga-event (напр. запис на співбесіду в групу)
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest && e.target.closest('a[data-ga-event]');
+      if (a) gtag('event', a.getAttribute('data-ga-event'), { channel: a.getAttribute('data-ga-channel') });
+    });
   </script>
   {% endif %}
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">

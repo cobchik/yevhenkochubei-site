@@ -680,3 +680,41 @@ a.zoom { cursor: zoom-in; }
 }
 .cert img { width: 100%; height: 100%; object-fit: contain; display: block; transition: transform 0.2s; }
 .cert:hover img { transform: scale(1.04); }
+
+/* --- Сторінка чоловічої групи (/hrupy/cholovicha/) --- */
+.group-facts {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 24px;
+  max-width: var(--text-width);
+}
+.group-facts li { padding: 6px 0; border-top: 1px solid var(--line); }
+.group-facts li:first-child { border-top: none; }
+.group-cta { margin: 24px 0 8px; }
+.group-cta-alt { font-size: 0.95rem; color: var(--ink-soft); margin: 12px 0 0; }
+.group-topic-tags {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--pine);
+}
+.group-frame { max-width: var(--text-width); }
+.group-frame li { margin-bottom: 0.5em; }
+.cta-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+
+/* План сезону: зустрічі й теми */
+.season-plan { list-style: none; padding: 0; margin: 24px 0 16px; max-width: var(--text-width); }
+.season-plan li {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 12px;
+  padding: 12px 0;
+  border-top: 1px solid var(--line);
+}
+.season-plan li:first-child { border-top: none; }
+.season-num { font-weight: 600; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+.season-free div { color: var(--ink-soft); }
+.season-topic { background: var(--paper-2); padding-left: 12px !important; padding-right: 12px !important; border-left: 3px solid var(--pine); }
+.season-topic .season-num { color: var(--pine); }
+.season-topic h3 { margin: 0 0 4px; font-size: 1.1rem; }
+.season-topic p { margin: 4px 0 0; }
