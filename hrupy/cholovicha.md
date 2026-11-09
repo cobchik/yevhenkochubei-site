@@ -93,9 +93,9 @@ permalink: /hrupy/cholovicha/
   <p>
     Попередні сезони показали: чоловікам, які вперше приходять у групу, часто
     важко без опори - коли немає теми і незрозуміло, з чого почати. Тому цей
-    сезон має структуру: 7 тем і вільні зустрічі між ними. Тема - це запрошення,
-    а не завдання: не обов'язково висловлюватися щодо кожного питання. А вільна
-    зустріч - не перерва, а повноцінна частина роботи: саме там часто
+    сезон має структуру: 7 тем і зустрічі без теми між ними. Тема - це запрошення,
+    а не завдання: не обов'язково висловлюватися щодо кожного питання. А зустріч без теми -
+    не перерва, а повноцінна частина роботи: саме там часто
     відбувається найважливіше - між учасниками, тут і зараз.
   </p>
 
@@ -114,7 +114,7 @@ permalink: /hrupy/cholovicha/
           і захоплення. Страх виглядати слабким чи недостатньо успішним.</p>
       </div>
     </li>
-    <li class="season-free"><span class="season-num">5</span><div>Вільна зустріч</div></li>
+    <li class="season-free"><span class="season-num">5</span><div>Зустріч без теми</div></li>
     <li class="season-topic">
       <span class="season-num">6</span>
       <div>
@@ -124,7 +124,7 @@ permalink: /hrupy/cholovicha/
           справлятися з труднощами - і що з цього хочеш зберегти, а що залишити.</p>
       </div>
     </li>
-    <li class="season-free"><span class="season-num">7</span><div>Вільна зустріч</div></li>
+    <li class="season-free"><span class="season-num">7</span><div>Зустріч без теми</div></li>
     <li class="season-topic">
       <span class="season-num">8</span>
       <div>
@@ -134,7 +134,7 @@ permalink: /hrupy/cholovicha/
           І що відбувається, коли інший бачить тебе вразливим.</p>
       </div>
     </li>
-    <li class="season-free"><span class="season-num">9–10</span><div>Вільні зустрічі</div></li>
+    <li class="season-free"><span class="season-num">9–10</span><div>Зустрічі без теми</div></li>
     <li class="season-topic">
       <span class="season-num">11</span>
       <div>
@@ -144,7 +144,7 @@ permalink: /hrupy/cholovicha/
           вплив - і вміння лишатися в стосунках, не відмовляючись від себе.</p>
       </div>
     </li>
-    <li class="season-free"><span class="season-num">12</span><div>Вільна зустріч</div></li>
+    <li class="season-free"><span class="season-num">12</span><div>Зустріч без теми</div></li>
     <li class="season-topic">
       <span class="season-num">13</span>
       <div>
@@ -154,7 +154,7 @@ permalink: /hrupy/cholovicha/
           визнання. Кому і навіщо ти досі доводиш, що чогось вартий.</p>
       </div>
     </li>
-    <li class="season-free"><span class="season-num">14</span><div>Вільна зустріч</div></li>
+    <li class="season-free"><span class="season-num">14</span><div>Зустріч без теми</div></li>
     <li class="season-topic">
       <span class="season-num">15</span>
       <div>
@@ -165,7 +165,7 @@ permalink: /hrupy/cholovicha/
           постійна зайнятість зі способу відпочити й впоратися перетворюються на проблему.</p>
       </div>
     </li>
-    <li class="season-free"><span class="season-num">16–17</span><div>Вільні зустрічі</div></li>
+    <li class="season-free"><span class="season-num">16–17</span><div>Зустрічі без теми</div></li>
     <li class="season-topic">
       <span class="season-num">18</span>
       <div>
@@ -175,7 +175,7 @@ permalink: /hrupy/cholovicha/
           страх втратити досягнуте. Від розуміння - до реальних кроків.</p>
       </div>
     </li>
-    <li class="season-free"><span class="season-num">19–20</span><div>Вільні зустрічі</div></li>
+    <li class="season-free"><span class="season-num">19–20</span><div>Зустрічі без теми</div></li>
     <li class="season-topic">
       <span class="season-num">21</span>
       <div>
